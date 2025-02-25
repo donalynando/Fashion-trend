@@ -1,0 +1,97 @@
+# Project Structure Review
+
+## Framework & Technologies
+- Laravel (PHP Framework)
+- Vue.js (Frontend Framework)
+- Tailwind CSS (Styling)
+
+## Components Structure (Total: 41)
+1. Base Components:
+   - ExampleComponent.vue
+   - index.vue
+   - register.vue
+
+2. Admin Components (7):
+   Located in /resources/js/components/admin
+
+3. User Components (32):
+   Located in /resources/js/components/user
+
+4. Shared Components (1):
+   Located in /resources/js/components/shared
+
+## Controllers (17)
+1. Base Controllers:
+   - Controller.php
+   - AdminController.php
+   - UserAuthController.php
+   - AdminAuthController.php
+
+2. Admin Controllers (7):
+   Located in /Controllers/Admin
+
+3. User Controllers (8):
+   Located in /Controllers/User
+
+## Models (9)
+1. User Management:
+   - User.php
+   - Admin.php
+   - UserAddress.php
+   - Address.php
+
+2. E-commerce Related:
+   - Product.php
+   - Cart.php
+   - Order.php
+   - OrderItem.php
+   - Refund.php
+
+## Project Architecture
+1. Frontend:
+   - Vue.js components for UI
+   - Tailwind CSS for styling
+   - Components organized by user roles (admin/user)
+
+2. Backend:
+   - Laravel MVC architecture
+   - Separate controllers for Admin and User functionalities
+   - RESTful API structure
+
+3. Database:
+   - Migrations available for database structure
+   - Models with relationships
+   - Seeders for initial data
+
+## Key Features
+1. Authentication System:
+   - Separate auth for Users and Admins
+   - Registration functionality
+
+2. User Management:
+   - User profiles
+   - Address management
+   - Dashboard functionality
+
+3. E-commerce Features:
+   - Product management
+   - Shopping cart
+   - Order processing
+   - Refund handling
+
+## Directory Structure
+- /app: Application core code
+- /resources: Frontend assets and views
+- /database: Migrations and seeders
+- /routes: API and web routes
+- /config: Application configuration
+- /public: Publicly accessible files
+- /storage: Application storage
+- /tests: Test files
+
+## Important Notes
+1. The project follows a multi-user role architecture (Admin/User)
+2. Implements a complete e-commerce system with order management
+3. Uses Vue.js components for dynamic frontend interactions
+4. Follows Laravel best practices for backend implementation
+5. Includes address management system for users

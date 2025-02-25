@@ -1,0 +1,44 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BG7p_cIR.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Bd3q8yYu.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/components/user/cart.vue",
+      "resources/js/components/user/wishlist.vue"
+    ],
+    "css": [
+      "assets/app-CY9ihbAZ.css"
+    ]
+  },
+  "resources/js/components/user/cart.vue": {
+    "file": "assets/cart-RChi3eqf.js",
+    "name": "cart",
+    "src": "resources/js/components/user/cart.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/cart-D8Pneaqa.css"
+    ]
+  },
+  "resources/js/components/user/wishlist.vue": {
+    "file": "assets/wishlist-CITRebaV.js",
+    "name": "wishlist",
+    "src": "resources/js/components/user/wishlist.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/wishlist-D_ScQ9D7.css"
+    ]
+  }
+}
